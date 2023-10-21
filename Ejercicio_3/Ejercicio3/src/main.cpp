@@ -8,7 +8,7 @@
 void setup()
 { // funcion principal
 
-  Serial.begin(9600); // inicial puerto serial
+  Serial.begin(115200); // inicial puerto serial
   Serial.println();   // salto de linea
 
   int entero = 15;        // variable entera
@@ -21,3 +21,4 @@ void setup()
 void loop()
 {
 }
+
