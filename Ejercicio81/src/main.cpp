@@ -4,8 +4,8 @@
 //mediante recurrencia:
 
 
-//suma(n)=1
-//n+suma(n-1),si n=1 ,si n>1
+//suma(n)=1 ,si n=1
+//n+suma(n-1) ,si n>1
 #include<Arduino.h> // libreria principal
   
 void setup (){       //funcion principal 
@@ -17,13 +17,13 @@ void setup (){       //funcion principal
     int nElementos;
 
     do{
-       Serial.println("digite el numero de vectores");//pedir al usuario el valor de x
+       Serial.println("digite el numero de elementos");//pedir al usuario el valor de elementos
        while (!Serial.available()) {} //pausar el codigo
-       nElementos= Serial.parseInt();//lo que escriba el usuario lo convierte a entero  y lo guarda en x
+       nElementos= Serial.parseInt();//lo que escriba el usuario lo lo guarda en nelementos
        }while(nElementos>=0);
         Serial.println("la suma es "+ sumar(nElementos));
      
-
+}
 //funcion recursiva
 int sumar(int n){
          int suma=0;
@@ -39,7 +39,7 @@ int sumar(int n){
 
   }  
 
-}
+
     
 
 void loop(){
